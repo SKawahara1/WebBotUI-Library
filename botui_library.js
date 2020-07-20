@@ -4480,7 +4480,7 @@ function toComment(sourceMap) {
 
 /***/ "./node_modules/jsframe.js/dist/jsframe.min.js":
 /*!*****************************************************!*\
-  !*** ./node_modules/jsframe.js/dist/jsframe.js ***!
+  !*** ./node_modules/jsframe.js/dist/jsframe.min.js ***!
   \*****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -5145,7 +5145,7 @@ function addStyle (obj, options) {
 	// If a transform function was defined, run it on the css
 	if (options.transform && obj.css) {
 	    result = typeof options.transform === 'function'
-		 ? options.transform(obj.css)
+		 ? options.transform(obj.css) 
 		 : options.transform.default(obj.css);
 
 	    if (result) {
@@ -6735,7 +6735,7 @@ function () {
             });
           }
 
-          isUserInputConsumed = true;
+          isUserInputConsumed = false;
 
           if (outIdx == 0) {
             //In the case of the first message,
